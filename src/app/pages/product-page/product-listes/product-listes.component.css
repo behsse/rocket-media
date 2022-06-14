@@ -1,10 +1,9 @@
-h2{
+h2 {
   margin-top: 50px;
   text-align: center;
 }
-.flex-cards{
+.flex-cards {
   display: flex;
   justify-content: center;
   margin: 20px;
-
 }
