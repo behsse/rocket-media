@@ -2,12 +2,14 @@
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
 
 <div class="card" style="width: 18rem;">
-  <h5 class="card-title">{{productsName}}</h5>
-  <img src="{{productsImg}}" class="card-img-top" alt="...">
+  <h5 class="card-title">{{product.nom}}</h5>
+  <img src="https://images.bfmtv.com/_nUxTQiQGwnK-IXXmLTnrYd8hTA=/0x0:1920x1080/800x0/images/Rocket-178316.jpg" *ngIf="!product.img" class="card-img-top default">
+  <img [src]="product.img" *ngIf="product.img" class="card-img-top" alt="...">
   <div class="card-body">
-    <p class="card-text">Realisateur : {{productsReal}}</p>
-    <p class="card-text">{{productsSynopsis.slice(0 , 100)}} ...</p>
-    <p class="card-text">Année de sortie : {{productsAnnee}}</p>
+    <p class="card-text" *ngIf="product.real"> Realisateur : {{product.real}}</p>
+    <p class="card-text" *ngIf="product.artiste">Artiste : {{product.artiste}}</p>
+    <p class="card-text" *ngIf="product.synopsis">{{product.synopsis.slice(0 , 100)}} ...</p>
+    <p class="card-text">Année de sortie : {{product.annee}}</p>
     <a href="#" class="btn btn-primary">Voir plus</a>
   </div>
 </div>

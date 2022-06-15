@@ -1,9 +1,10 @@
-<h2>Les films</h2>
+
 <div class="flex-cards">
 
   <div *ngFor="let product of products">
 
-    <app-product-cards [productsName]="product.nom" [productsReal]="product.real" [productsSynopsis]="product.synopsis" [productsAnnee]="product.annee" [productsImg]="product.img"></app-product-cards>
+    <app-product-cards [product]="product"></app-product-cards>
 
   </div>
+
 </div>
