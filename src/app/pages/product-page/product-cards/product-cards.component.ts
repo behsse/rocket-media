@@ -13,25 +13,6 @@ export class ProductCardsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // @Input()
-  // productsName: any[] = [];
-
-  // @Input()
-  // productsImg: any[] = [];
-
-  // @Input()
-  // productsReal: any[] = [];
-
-  // @Input()
-  // productsSynopsis: any[] = [];
-
-  // @Input()
-  // productsAnnee: any[] = [];
-
   @Input()
   product !: any
-
-  @Input()
-  productAlbum !: any
-
 }
