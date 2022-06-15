@@ -1,5 +1,41 @@
 .card{
-  margin: 50px;
-  padding: 10px;
-
+  margin: 30px;
+  padding: 5px;
+  h5{
+    text-align: center;
+    margin: 5px 0 10px 0;
+    padding: 10px;
+    border-bottom: 1px solid #dee2e6;
+  }
+  .img-container{
+    object-fit: contain;
+    margin: 0 auto;
+    img{
+      display: block;
+      width: 200px;
+      height: 200px;
+    }
+    .default{
+      min-width: default;
+    }
+  }
+  .card-body{
+    p{
+      font-size: 14px;
+    }
+    .italic{
+      font-style: italic;
+      color: blueviolet;
+    }
+    .btn-primary{
+      display: block;
+      background-color: blueviolet;
+      border: 1px solid blueviolet;
+      transition: all .5s;
+      &:hover{
+        background: none;
+        color: blueviolet;
+      }
+    }
+  }
 }

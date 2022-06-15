@@ -1,4 +1,39 @@
 .card {
-  margin: 50px;
+  margin: 30px;
+  padding: 5px;
+}
+.card h5 {
+  text-align: center;
+  margin: 5px 0 10px 0;
   padding: 10px;
+  border-bottom: 1px solid #dee2e6;
+}
+.card .img-container {
+  object-fit: contain;
+  margin: 0 auto;
+}
+.card .img-container img {
+  display: block;
+  width: 200px;
+  height: 200px;
+}
+.card .img-container .default {
+  min-width: default;
+}
+.card .card-body p {
+  font-size: 14px;
+}
+.card .card-body .italic {
+  font-style: italic;
+  color: blueviolet;
+}
+.card .card-body .btn-primary {
+  display: block;
+  background-color: blueviolet;
+  border: 1px solid blueviolet;
+  transition: all 0.5s;
+}
+.card .card-body .btn-primary:hover {
+  background: none;
+  color: blueviolet;
 }
